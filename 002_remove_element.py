@@ -16,3 +16,10 @@ class Solution:
             return len(nums)
         nums.remove(val)
         return self.removeElement(nums, val)
+
+
+sln = Solution()
+to_test_lists = [([3, 2, 2, 3], 3), ([0, 1, 2, 2, 3, 0, 4, 2], 2)]
+for i in to_test_lists:
+    k = sln.removeElement(i[0], i[1])
+    print(f"k: {k}")
